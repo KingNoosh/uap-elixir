@@ -5,7 +5,7 @@ defmodule UserAgentParser do
   Documentation for UserAgentParser.
   """
 
-  @patterns_path Path.join([File.cwd!, "deps", "uap-core", "regexes.yaml"])
+  @patterns_path Path.join([File.cwd!, "vendor", "uap-core", "regexes.yaml"])
   def patterns_path do
     @patterns_path
   end
