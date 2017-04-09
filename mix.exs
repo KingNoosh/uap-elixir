@@ -3,7 +3,7 @@ defmodule UserAgentParser.Mixfile do
 
   def project do
     [
-      app: :user_agent_parser,
+      app: :uap_elixir,
       version: "0.1.0",
       elixir: "~> 1.4",
       build_embedded: Mix.env == :prod,
@@ -25,7 +25,8 @@ defmodule UserAgentParser.Mixfile do
   defp deps do
     [
       {:yaml_elixir, "~> 1.3.0"},
-      {:credo, "~> 0.7", only: [:dev, :test]}
+      {:credo, "~> 0.7", only: [:dev, :test]},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
